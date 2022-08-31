@@ -8,7 +8,8 @@ This is a template for a Python web development environment in WSL2. It includes
 * poetry - Python package manager and virtual environment manager
 * mypy - Python static type checker
 * micro - A modern and intuitive terminal-based text editor
-* gh-cli (GitHub CLI) - https://cli.github.com/
+* gh-cli (GitHub CLI) - GitHub command line tool
+* oh-my-posh - A prompt theme for PowerShell (and other shells) - because why not?
 
 No other tools or modules are installed. You can add them as you need them.
 
