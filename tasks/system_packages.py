@@ -5,7 +5,7 @@ from pyinfra.operations import apt, server
 """
 
 apt.packages(
-    name="Ensure that micro zip and unzip packages are installed",
-    packages=["micro", "unzip", "zip"],
+    name="Ensure that required system packages are installed",
+    packages=["micro", "unzip", "zip", "build-essential", "python3-dev"],
     _sudo=True,
 )
