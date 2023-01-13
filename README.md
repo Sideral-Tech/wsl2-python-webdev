@@ -1,6 +1,6 @@
-# wsl2-python-webdev
+# Sideral Technologies - WSL2 Python Web Development Environment
 
-This is a template for a Python web development environment in WSL2. It includes:
+This is a template for a Python web development environment in WSL2 developed by Sideral Technologies. It includes:
 
 * pip - Python package manager
 * virtualenv - Python virtual environment manager
@@ -9,28 +9,35 @@ This is a template for a Python web development environment in WSL2. It includes
 * mypy - Python static type checker
 * micro - A modern and intuitive terminal-based text editor
 * gh-cli (GitHub CLI) - GitHub command line tool
-* oh-my-posh - A prompt theme for PowerShell (and other shells) - because why not?
+* oh-my-posh - A prompt theme for PowerShell (and other shells) 
 
-No other tools or modules are installed. You can add them as you need them.
+This template is designed to provide a minimal, yet comprehensive development environment for Python web development projects. 
 
 ## Usage
 
-Just run `./bootstrap.sh`, preferably in a clean Ubuntu container, and you're good to go. It will install the tools listed above and add them to your path. `gh` will require you to authenticate with GitHub. To do that, run `gh auth login` and follow the instructions.
+To set up the environment, please run `./bootstrap.sh` in a clean Ubuntu container. The script will install the tools listed above and add them to your path. `gh` will require you to authenticate with GitHub. To do that, run `gh auth login` and follow the instructions.
 
 For the sake of convenience, the script will also setup `gh` completion for `bash`. If you use another shell, you'll have to do that yourself.
 
 ## Why?
 
-I wanted to have a Python web development environment in WSL2 that was as close to a "clean" environment as possible. I didn't want to install a bunch of tools and modules that I might not need. I also wanted to be able to use the same environment on my Windows machine and my Linux machine. This template is the result of that.
+Sideral Technologies has developed this template to provide a minimal, yet comprehensive development environment for Python web development projects within WSL2. The template is designed to provide a clean environment that includes only the necessary tools and modules for development, allowing for easy management and scalability. Additionally, this template allows for the use of the same environment on both Windows and Linux machines.
 
 ### Why not just use a Docker container?
 
-Because I don't want to have to run a Docker container every time I want to run a Python script. I want to be able to run Python scripts directly from the command line.
+Sideral Technologies has determined that the use of a Docker container for the execution of Python scripts is not the most efficient solution. Instead, the template allows for direct execution of Python scripts from the command line for increased efficiency.
 
 ### Why not just use a virtual environment?
 
-Because I don't want to have to activate a virtual environment every time I want to run a Python script. I want to be able to run Python scripts directly from the command line. I've told you that just above.
+Sideral Technologies has determined that the use of a virtual environment for the execution of Python scripts is not the most efficient solution. Instead, the template allows for direct execution of Python scripts from the command line for increased efficiency.
 
 ### Why pyinfra and not Ansible?
 
-Because I wanted to try pyinfra. I've used Ansible before and I like it, but I wanted to try something new. pyinfra is a lot simpler than Ansible and it's written in Python, so it's easier to understand than the mess that Ansible's YAML files are.
+Sideral Technologies has evaluated different configuration management tools and has determined that pyinfra is the most suitable for the needs of the company. Pyinfra is a lot simpler than Ansible and its written in Python, making it easier to understand and manage than Ansible's YAML
+
+## Note
+
+Please note that this template is intended for internal use only and should not be shared or distributed outside of Sideral Technologies. Unauthorized use of this script will result in severe disciplinary action, including termination of employment. Misuse of company resources will not be tolerated. If you have any questions or issues, please contact the IT department immediately.
+
+## Disclaimer
+Sideral Technologies will not be held responsible for any unauthorized or illegal use of this script. Use of this script is at your own risk and any consequences resulting from such use will be borne solely by the user.
